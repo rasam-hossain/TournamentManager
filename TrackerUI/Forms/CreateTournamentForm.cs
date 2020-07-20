@@ -22,10 +22,12 @@ namespace TrackerUI
 
         }
 
+        /*
         /// <summary>
         /// The follwoing method is to draw a line in the middle of the frame
         /// </summary>
         /// <param name="e"></param>
+        
         protected override void OnPaint(PaintEventArgs e)
         {
             Color back = this.BackColor;
@@ -36,6 +38,7 @@ namespace TrackerUI
                 e.Graphics.DrawLine(pen, x, 50, x, this.ClientSize.Height - 50);
             }
         }
+        */
 
         private void roundEdgedButton1_Click(object sender, EventArgs e)
         {
@@ -43,6 +46,26 @@ namespace TrackerUI
         }
 
         private void roundLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteTournamentPlayerButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deletePrizeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

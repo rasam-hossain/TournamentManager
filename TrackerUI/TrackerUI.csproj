@@ -46,46 +46,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateTournamentForm.cs">
+    <Compile Include="Forms\CreateTournamentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateTournamentForm.Designer.cs">
+    <Compile Include="Forms\CreateTournamentForm.Designer.cs">
       <DependentUpon>CreateTournamentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\RoundEdgedButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ThemeColor.cs" />
-    <Compile Include="TournamentViewerForm.cs">
+    <Compile Include="Forms\TournamentViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TournamentViewerForm.Designer.cs">
+    <Compile Include="Forms\TournamentViewerForm.Designer.cs">
       <DependentUpon>TournamentViewerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CreateTournamentForm.resx">
+    <Content Include="Resources\closeIcon.png" />
+    <Content Include="Resources\CreatePrizeIcon.png" />
+    <Content Include="Resources\CreateTeamIcon.png" />
+    <Content Include="Resources\CreateTournamentIcon.png" />
+    <Content Include="Resources\DashboardIcon.png" />
+    <None Include="Resources\deleteIcon.png" />
+    <None Include="Resources\deleteIconSquare.png" />
+    <Content Include="Resources\minimizeIcon.png" />
+    <None Include="Resources\tounamentmanagerlogo.png" />
+    <Content Include="Resources\tounamentmanagerlogo_6.png" />
+    <Content Include="Resources\TournamentTrackerIcon.ico" />
+    <Content Include="Resources\TournamentViewerIcon.png" />
+    <Content Include="Resources\vs.png" />
+    <None Include="Resources\restoreDownIcon.png" />
+    <None Include="Resources\maximizeIcon.png" />
+    <None Include="Resources\shutdownIcon.png" />
+    <EmbeddedResource Include="Forms\CreateTournamentForm.resx">
       <DependentUpon>CreateTournamentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="TournamentViewerForm.resx">
+    <EmbeddedResource Include="Forms\TournamentViewerForm.resx">
       <DependentUpon>TournamentViewerForm.cs</DependentUpon>
     </EmbeddedResource>
     <Content Include="fonts\fontawesome-webfont.eot" />
