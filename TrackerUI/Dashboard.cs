@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrackerUI.Forms;
 
 namespace TrackerUI
 {
@@ -136,14 +137,14 @@ namespace TrackerUI
             OpenChildForm(new CreateTournamentForm(), sender);
         }
 
-        private void createTeamButton_Click(object sender, EventArgs e)
+        private void addTeamButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new AddTeamForm(), sender);
         }
 
         private void createPrizeButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new CreatePrizeForm(), sender);
         }
 
         private void buttonClose_Click(object sender, EventArgs e)

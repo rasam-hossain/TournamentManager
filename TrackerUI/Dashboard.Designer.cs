@@ -35,7 +35,7 @@ namespace TrackerUI
             this.fontDialog2 = new System.Windows.Forms.FontDialog();
             this.menuPanel = new System.Windows.Forms.Panel();
             this.createPrizeButton = new System.Windows.Forms.Button();
-            this.createTeamButton = new System.Windows.Forms.Button();
+            this.addTeamButton = new System.Windows.Forms.Button();
             this.createTournamentButton = new System.Windows.Forms.Button();
             this.tournamentViewerButton = new System.Windows.Forms.Button();
             this.dashboardButton = new System.Windows.Forms.Button();
@@ -57,7 +57,7 @@ namespace TrackerUI
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.menuPanel.Controls.Add(this.createPrizeButton);
-            this.menuPanel.Controls.Add(this.createTeamButton);
+            this.menuPanel.Controls.Add(this.addTeamButton);
             this.menuPanel.Controls.Add(this.createTournamentButton);
             this.menuPanel.Controls.Add(this.tournamentViewerButton);
             this.menuPanel.Controls.Add(this.dashboardButton);
@@ -65,7 +65,7 @@ namespace TrackerUI
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(200, 670);
+            this.menuPanel.Size = new System.Drawing.Size(200, 711);
             this.menuPanel.TabIndex = 0;
             // 
             // createPrizeButton
@@ -82,31 +82,31 @@ namespace TrackerUI
             this.createPrizeButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.createPrizeButton.Size = new System.Drawing.Size(200, 60);
             this.createPrizeButton.TabIndex = 5;
-            this.createPrizeButton.Text = "  Select Prize";
+            this.createPrizeButton.Text = "  Create Prize";
             this.createPrizeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.createPrizeButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.createPrizeButton.UseVisualStyleBackColor = true;
             this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
             // 
-            // createTeamButton
+            // addTeamButton
             // 
-            this.createTeamButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.createTeamButton.FlatAppearance.BorderSize = 0;
-            this.createTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.createTeamButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createTeamButton.ForeColor = System.Drawing.Color.Gainsboro;
-            this.createTeamButton.Image = ((System.Drawing.Image)(resources.GetObject("createTeamButton.Image")));
-            this.createTeamButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.createTeamButton.Location = new System.Drawing.Point(0, 280);
-            this.createTeamButton.Name = "createTeamButton";
-            this.createTeamButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.createTeamButton.Size = new System.Drawing.Size(200, 60);
-            this.createTeamButton.TabIndex = 4;
-            this.createTeamButton.Text = "   Add Team";
-            this.createTeamButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.createTeamButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.createTeamButton.UseVisualStyleBackColor = true;
-            this.createTeamButton.Click += new System.EventHandler(this.createTeamButton_Click);
+            this.addTeamButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addTeamButton.FlatAppearance.BorderSize = 0;
+            this.addTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addTeamButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addTeamButton.ForeColor = System.Drawing.Color.Gainsboro;
+            this.addTeamButton.Image = ((System.Drawing.Image)(resources.GetObject("addTeamButton.Image")));
+            this.addTeamButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addTeamButton.Location = new System.Drawing.Point(0, 280);
+            this.addTeamButton.Name = "addTeamButton";
+            this.addTeamButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.addTeamButton.Size = new System.Drawing.Size(200, 60);
+            this.addTeamButton.TabIndex = 4;
+            this.addTeamButton.Text = "   Add Team";
+            this.addTeamButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addTeamButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.addTeamButton.UseVisualStyleBackColor = true;
+            this.addTeamButton.Click += new System.EventHandler(this.addTeamButton_Click);
             // 
             // createTournamentButton
             // 
@@ -271,7 +271,7 @@ namespace TrackerUI
             this.containerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.containerPanel.Location = new System.Drawing.Point(200, 75);
             this.containerPanel.Name = "containerPanel";
-            this.containerPanel.Size = new System.Drawing.Size(934, 595);
+            this.containerPanel.Size = new System.Drawing.Size(934, 636);
             this.containerPanel.TabIndex = 2;
             // 
             // Dashboard
@@ -279,7 +279,7 @@ namespace TrackerUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1134, 670);
+            this.ClientSize = new System.Drawing.Size(1134, 711);
             this.Controls.Add(this.containerPanel);
             this.Controls.Add(this.titleBarPanel);
             this.Controls.Add(this.menuPanel);
@@ -301,7 +301,7 @@ namespace TrackerUI
         private System.Windows.Forms.Panel menuPanel;
         private System.Windows.Forms.Button dashboardButton;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button createTeamButton;
+        private System.Windows.Forms.Button addTeamButton;
         private System.Windows.Forms.Button createTournamentButton;
         private System.Windows.Forms.Button tournamentViewerButton;
         private System.Windows.Forms.Button createPrizeButton;
