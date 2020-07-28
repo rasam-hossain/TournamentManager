@@ -34,8 +34,8 @@
             this.prizeAmountLabel = new System.Windows.Forms.Label();
             this.prizeAmountValue = new System.Windows.Forms.TextBox();
             this.placeNameLabel = new System.Windows.Forms.Label();
-            this.pricePercentageLabel = new System.Windows.Forms.Label();
-            this.pricePercentageValue = new System.Windows.Forms.TextBox();
+            this.prizePercentageLabel = new System.Windows.Forms.Label();
+            this.prizePercentageValue = new System.Windows.Forms.TextBox();
             this.orLabel = new System.Windows.Forms.Label();
             this.createPrizeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -92,6 +92,7 @@
             this.prizeAmountValue.Name = "prizeAmountValue";
             this.prizeAmountValue.Size = new System.Drawing.Size(200, 35);
             this.prizeAmountValue.TabIndex = 19;
+            this.prizeAmountValue.Text = "0";
             this.prizeAmountValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // placeNameLabel
@@ -106,27 +107,28 @@
             this.placeNameLabel.Text = "Place Name";
             this.placeNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pricePercentageLabel
+            // prizePercentageLabel
             // 
-            this.pricePercentageLabel.AutoSize = true;
-            this.pricePercentageLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pricePercentageLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.pricePercentageLabel.Location = new System.Drawing.Point(28, 307);
-            this.pricePercentageLabel.Name = "pricePercentageLabel";
-            this.pricePercentageLabel.Size = new System.Drawing.Size(212, 37);
-            this.pricePercentageLabel.TabIndex = 18;
-            this.pricePercentageLabel.Text = "Price Percentage";
-            this.pricePercentageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.prizePercentageLabel.AutoSize = true;
+            this.prizePercentageLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prizePercentageLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.prizePercentageLabel.Location = new System.Drawing.Point(28, 307);
+            this.prizePercentageLabel.Name = "prizePercentageLabel";
+            this.prizePercentageLabel.Size = new System.Drawing.Size(212, 37);
+            this.prizePercentageLabel.TabIndex = 18;
+            this.prizePercentageLabel.Text = "Price Percentage";
+            this.prizePercentageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pricePercentageValue
+            // prizePercentageValue
             // 
-            this.pricePercentageValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pricePercentageValue.ForeColor = System.Drawing.Color.White;
-            this.pricePercentageValue.Location = new System.Drawing.Point(246, 312);
-            this.pricePercentageValue.Name = "pricePercentageValue";
-            this.pricePercentageValue.Size = new System.Drawing.Size(171, 35);
-            this.pricePercentageValue.TabIndex = 21;
-            this.pricePercentageValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.prizePercentageValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.prizePercentageValue.ForeColor = System.Drawing.Color.White;
+            this.prizePercentageValue.Location = new System.Drawing.Point(246, 312);
+            this.prizePercentageValue.Name = "prizePercentageValue";
+            this.prizePercentageValue.Size = new System.Drawing.Size(171, 35);
+            this.prizePercentageValue.TabIndex = 21;
+            this.prizePercentageValue.Text = "0";
+            this.prizePercentageValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // orLabel
             // 
@@ -154,6 +156,7 @@
             this.createPrizeButton.TabIndex = 34;
             this.createPrizeButton.Text = "Create Prize";
             this.createPrizeButton.UseVisualStyleBackColor = false;
+            this.createPrizeButton.Click += new System.EventHandler(this.CreatePrizeButton_Click);
             // 
             // CreatePrizeForm
             // 
@@ -163,9 +166,9 @@
             this.ClientSize = new System.Drawing.Size(459, 561);
             this.Controls.Add(this.createPrizeButton);
             this.Controls.Add(this.orLabel);
-            this.Controls.Add(this.pricePercentageValue);
+            this.Controls.Add(this.prizePercentageValue);
             this.Controls.Add(this.prizeAmountValue);
-            this.Controls.Add(this.pricePercentageLabel);
+            this.Controls.Add(this.prizePercentageLabel);
             this.Controls.Add(this.placeNameLabel);
             this.Controls.Add(this.placeNameValue);
             this.Controls.Add(this.prizeAmountLabel);
@@ -188,8 +191,8 @@
         private System.Windows.Forms.Label prizeAmountLabel;
         private System.Windows.Forms.TextBox prizeAmountValue;
         private System.Windows.Forms.Label placeNameLabel;
-        private System.Windows.Forms.Label pricePercentageLabel;
-        private System.Windows.Forms.TextBox pricePercentageValue;
+        private System.Windows.Forms.Label prizePercentageLabel;
+        private System.Windows.Forms.TextBox prizePercentageValue;
         private System.Windows.Forms.Label orLabel;
         private System.Windows.Forms.Button createPrizeButton;
     }

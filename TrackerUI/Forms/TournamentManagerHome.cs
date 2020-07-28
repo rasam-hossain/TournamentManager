@@ -12,7 +12,7 @@ using TrackerUI.Forms;
 
 namespace TrackerUI
 {
-    public partial class Dashboard : Form
+    public partial class TournamentManagerHome : Form
     {
         // fields
         private Button currentButton;
@@ -22,18 +22,19 @@ namespace TrackerUI
         /// <summary>
         /// Constructor
         /// </summary>
-        public Dashboard()
+        public TournamentManagerHome()
         {
             InitializeComponent();
             this.Text = string.Empty;
             this.ControlBox = false;
+
+            // The application starts from the dashboard form
+            OpenChildForm(new TournamentDashboardForm(), dashboardButton);
         }
 
         /*
         // The next bock of code makes the drag function work on the 
         // titleBar panel
-        // this block of code has been copied from internet and 
-        // needs sometime digging
         */
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -124,7 +125,7 @@ namespace TrackerUI
         // Click event generated for each of the buttons
         private void dashboardButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new TournamentDashboardForm(), sender);
         }
 
         private void tournamentViewerButton_Click(object sender, EventArgs e)

@@ -64,21 +64,24 @@
     <Compile Include="Forms\CreateTournamentForm.Designer.cs">
       <DependentUpon>CreateTournamentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.cs">
+    <Compile Include="Forms\TournamentDashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="Forms\TournamentDashboardForm.Designer.cs">
+      <DependentUpon>TournamentDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TournamentManagerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TournamentManagerHome.Designer.cs">
+      <DependentUpon>TournamentManagerHome.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\RoundEdgedButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ThemeColor.cs" />
+    <Compile Include="Themes\ThemeColor.cs" />
     <Compile Include="Forms\TournamentViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,7 +105,6 @@
     <Content Include="Resources\vs.png" />
     <None Include="Resources\restoreDownIcon.png" />
     <None Include="Resources\maximizeIcon.png" />
-    <None Include="Resources\shutdownIcon.png" />
     <EmbeddedResource Include="Forms\AddTeamForm.resx">
       <DependentUpon>AddTeamForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,8 +114,11 @@
     <EmbeddedResource Include="Forms\CreateTournamentForm.resx">
       <DependentUpon>CreateTournamentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\TournamentDashboardForm.resx">
+      <DependentUpon>TournamentDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TournamentManagerHome.resx">
+      <DependentUpon>TournamentManagerHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,6 +151,12 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrackerLibrary\TrackerLibrary.csproj">
+      <Project>{49ecca5e-8cbe-432b-83a3-784bd7152fe9}</Project>
+      <Name>TrackerLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

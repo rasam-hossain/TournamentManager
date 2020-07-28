@@ -2,7 +2,7 @@
 
 namespace TrackerUI
 {
-    partial class Dashboard
+    partial class TournamentManagerHome
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,7 @@ namespace TrackerUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.fontDialog2 = new System.Windows.Forms.FontDialog();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TournamentManagerHome));
             this.menuPanel = new System.Windows.Forms.Panel();
             this.createPrizeButton = new System.Windows.Forms.Button();
             this.addTeamButton = new System.Windows.Forms.Button();
@@ -274,7 +272,7 @@ namespace TrackerUI
             this.containerPanel.Size = new System.Drawing.Size(934, 636);
             this.containerPanel.TabIndex = 2;
             // 
-            // Dashboard
+            // TournamentManagerHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -284,7 +282,8 @@ namespace TrackerUI
             this.Controls.Add(this.titleBarPanel);
             this.Controls.Add(this.menuPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Dashboard";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "TournamentManagerHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tournamenet Manager";
             this.menuPanel.ResumeLayout(false);
@@ -296,8 +295,6 @@ namespace TrackerUI
         }
 
         #endregion
-        private System.Windows.Forms.FontDialog fontDialog1;
-        private System.Windows.Forms.FontDialog fontDialog2;
         private System.Windows.Forms.Panel menuPanel;
         private System.Windows.Forms.Button dashboardButton;
         private System.Windows.Forms.Panel panel2;
