@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace TrackerUI
+namespace TrackerUI.Forms
 {
     partial class TournamentManagerHome
     {

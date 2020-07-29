@@ -8,9 +8,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TrackerUI.Forms;
 
-namespace TrackerUI
+namespace TrackerUI.Forms
 {
     public partial class TournamentManagerHome : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace TrackerUI
+﻿namespace TrackerUI.Forms
 {
     partial class CreateTournamentForm
     {

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrackerLibrary;
 using TrackerLibrary.Interfaces;
+using TrackerLibrary.Models;
 
 namespace TrackerUI.Forms
 {

@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrackerUI;
 
-namespace TrackerUI
+namespace TrackerUI.Forms
 {
     public partial class TournamentViewerForm : Form
     {
