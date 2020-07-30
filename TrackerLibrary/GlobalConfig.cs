@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TrackerLibrary.Interfaces;
+using System.Configuration;
+using TrackerLibrary.DataAccess;
 
 namespace TrackerLibrary
 {
@@ -11,19 +12,23 @@ namespace TrackerLibrary
         public static void InitializeConnections(bool database, bool textFiles)
         {
             // We want to have either or both
-            if(database)
+            if (database)
             {
                 // TODO - Set-up the SQL connector properly
                 SQLConnector sql = new SQLConnector();
                 Connections.Add(sql);
             }
 
-            if(textFiles)
+            if (textFiles)
             {
                 //  TODO - Create the Text Connection
-                TextConnection text = new TextConnection();
+                TextConnector text = new TextConnector();
                 Connections.Add(text);
             }
+        }
+        public static string ConnectionString(string name)
+        {
+            return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
     }
 }
