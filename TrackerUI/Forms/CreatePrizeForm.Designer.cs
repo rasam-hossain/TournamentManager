@@ -116,7 +116,7 @@
             this.prizePercentageLabel.Name = "prizePercentageLabel";
             this.prizePercentageLabel.Size = new System.Drawing.Size(212, 37);
             this.prizePercentageLabel.TabIndex = 18;
-            this.prizePercentageLabel.Text = "Price Percentage";
+            this.prizePercentageLabel.Text = "Prize Percentage";
             this.prizePercentageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // prizePercentageValue

@@ -24,18 +24,15 @@ namespace TrackerUI.Forms
         {
             if(ValidateForm())
             {
-                PrizeModel model = new PrizeModel(placeNameValue.Text, 
-                                                placeNumberValue.Text, 
+                PrizeModel model = new PrizeModel(placeNumberValue.Text, 
+                                                placeNameValue.Text, 
                                                 prizeAmountValue.Text, 
-                                                prizePercentageValue.Text);
-                foreach (IDataConnection db in GlobalConfig.Connections)
-                {
-                    db.CreatePrize(model);
-                }
+                                                prizePercentageValue.Text);                
+                GlobalConfig.Connection.CreatePrize(model);
 
                 // Clear-out the form
-                placeNameValue.Text = "";
                 placeNumberValue.Text = "";
+                placeNameValue.Text = "";
                 prizeAmountValue.Text = "0";
                 prizePercentageValue.Text = "0";
             }
