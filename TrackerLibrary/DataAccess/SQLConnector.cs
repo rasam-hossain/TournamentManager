@@ -10,9 +10,8 @@ namespace TrackerLibrary.DataAccess
 {
     public class SQLConnector : IDataConnection
     {
-        // TODO - Make the CreatePrize method to actally save the data
         /// <summary>
-        /// Saves a new prize to the database
+        /// Saves a new prize to the SQL database
         /// </summary>
         /// <param name="model">The prize infromation</param>
         /// <returns>The prize information, including the unique identifier</returns>
