@@ -10,6 +10,28 @@ namespace TrackerLibrary.DataAccess
 {
     public class SQLConnector : IDataConnection
     {
+        public PersonModel Createperson(PersonModel model)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.ConnectionString("TournamentManager")))
+            {
+                // All the parameters are added in order to pass in later on
+                var p = new DynamicParameters();
+                p.Add("@FirstName", model.FirstName);
+                p.Add("@LastName", model.LastName);
+                p.Add("@EmailAddress", model.EmailAddress);
+                p.Add("@CellPhoneNumber", model.CellPhoneNumber);
+                p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                // The parameters will be passed in and the stored procedure will be executed
+                connection.Execute("dbo.spPeople_Insert", p, commandType: CommandType.StoredProcedure);
+
+                /* This will look into the dynamic parameter list p,  
+                / and find @id parameter of type int */
+                model.Id = p.Get<int>("@id");
+                return model;
+            }
+        }
+
         /// <summary>
         /// Saves a new prize to the SQL database
         /// </summary>

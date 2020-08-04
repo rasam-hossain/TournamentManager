@@ -139,7 +139,7 @@ namespace TrackerUI.Forms
 
         private void addTeamButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new AddTeamForm(), sender);
+            OpenChildForm(new CreateTeamForm(), sender);
         }
 
         private void createPrizeButton_Click(object sender, EventArgs e)

@@ -100,7 +100,7 @@ namespace TrackerUI.Forms
             this.addTeamButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.addTeamButton.Size = new System.Drawing.Size(200, 60);
             this.addTeamButton.TabIndex = 4;
-            this.addTeamButton.Text = "   Add Team";
+            this.addTeamButton.Text = "   Create Team";
             this.addTeamButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addTeamButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.addTeamButton.UseVisualStyleBackColor = true;

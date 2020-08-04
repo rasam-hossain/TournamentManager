@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddTeamForm.cs">
+    <Compile Include="Forms\CreateTeamForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddTeamForm.Designer.cs">
-      <DependentUpon>AddTeamForm.cs</DependentUpon>
+    <Compile Include="Forms\CreateTeamForm.Designer.cs">
+      <DependentUpon>CreateTeamForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CreatePrizeForm.cs">
       <SubType>Form</SubType>
@@ -105,8 +105,8 @@
     <Content Include="Resources\vs.png" />
     <None Include="Resources\restoreDownIcon.png" />
     <None Include="Resources\maximizeIcon.png" />
-    <EmbeddedResource Include="Forms\AddTeamForm.resx">
-      <DependentUpon>AddTeamForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\CreateTeamForm.resx">
+      <DependentUpon>CreateTeamForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreatePrizeForm.resx">
       <DependentUpon>CreatePrizeForm.cs</DependentUpon>
