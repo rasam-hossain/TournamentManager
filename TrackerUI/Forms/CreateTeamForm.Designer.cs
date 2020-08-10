@@ -45,7 +45,7 @@
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.teamMembersListBox = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.removeSelectedTeamMemberButton = new System.Windows.Forms.Button();
             this.createTeamButton = new System.Windows.Forms.Button();
             this.addNewMemberGroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -54,11 +54,11 @@
             // teamNameValue
             // 
             this.teamNameValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.teamNameValue.ForeColor = System.Drawing.Color.White;
             this.teamNameValue.Location = new System.Drawing.Point(23, 43);
             this.teamNameValue.Name = "teamNameValue";
             this.teamNameValue.Size = new System.Drawing.Size(308, 35);
             this.teamNameValue.TabIndex = 13;
-            this.teamNameValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // teamNameLabel
             // 
@@ -104,6 +104,7 @@
             this.addMemberButton.TabIndex = 23;
             this.addMemberButton.Text = "Add Member";
             this.addMemberButton.UseVisualStyleBackColor = false;
+            this.addMemberButton.Click += new System.EventHandler(this.addMemberButton_Click);
             // 
             // addNewMemberGroupBox
             // 
@@ -233,31 +234,32 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.removeSelectedTeamMemberButton);
             this.panel1.Location = new System.Drawing.Point(890, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(32, 512);
             this.panel1.TabIndex = 26;
             // 
-            // button2
+            // removeSelectedTeamMemberButton
             // 
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuBar;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = global::TrackerUI.Properties.Resources.deleteIconSquare;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 512);
-            this.button2.TabIndex = 34;
-            this.button2.UseVisualStyleBackColor = false;
+            this.removeSelectedTeamMemberButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.removeSelectedTeamMemberButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.removeSelectedTeamMemberButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.removeSelectedTeamMemberButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.removeSelectedTeamMemberButton.FlatAppearance.BorderSize = 0;
+            this.removeSelectedTeamMemberButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.removeSelectedTeamMemberButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuBar;
+            this.removeSelectedTeamMemberButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.removeSelectedTeamMemberButton.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeSelectedTeamMemberButton.ForeColor = System.Drawing.Color.Transparent;
+            this.removeSelectedTeamMemberButton.Image = global::TrackerUI.Properties.Resources.deleteIconSquare;
+            this.removeSelectedTeamMemberButton.Location = new System.Drawing.Point(0, 0);
+            this.removeSelectedTeamMemberButton.Margin = new System.Windows.Forms.Padding(0);
+            this.removeSelectedTeamMemberButton.Name = "removeSelectedTeamMemberButton";
+            this.removeSelectedTeamMemberButton.Size = new System.Drawing.Size(32, 512);
+            this.removeSelectedTeamMemberButton.TabIndex = 34;
+            this.removeSelectedTeamMemberButton.UseVisualStyleBackColor = false;
+            this.removeSelectedTeamMemberButton.Click += new System.EventHandler(this.removeSelectedTeamMemberButton_Click);
             // 
             // createTeamButton
             // 
@@ -274,6 +276,7 @@
             this.createTeamButton.TabIndex = 27;
             this.createTeamButton.Text = "Create Team";
             this.createTeamButton.UseVisualStyleBackColor = false;
+            this.createTeamButton.Click += new System.EventHandler(this.createTeamButton_Click);
             // 
             // CreateTeamForm
             // 
@@ -322,6 +325,6 @@
         private System.Windows.Forms.ListBox teamMembersListBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button createTeamButton;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button removeSelectedTeamMemberButton;
     }
 }
